@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        #header{
+            display: flex;
+            flex-direction: row;
+            background-color: beige;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+        #header-img{
+            width: 100px;
+        }
+        #nav-bar{
+            display: flex;
+           margin-left: auto;
+        align-self:center;
+          
+        }
+        #nav-bar a{
+            padding-right: 16px;
+            font-size: 26px;
+            text-decoration: none;
+            color: black;
+        }
+        #nav-bar a:hover{
+            background-color: coral;
+            color:dimgrey;
+        }
+        @media all and(max-width:300px) {
+            #header{
+                flex-direction: column;
+            }
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img src="logo.png" alt="logo" id="header-img">
+        <nav id="nav-bar">
+            <a href="#header" class="nav-link">Product</a>
+            <a href="#video" class="nav-link">FAQ</a>
+            <a href="#email" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/XKfgdkcIUxw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+<form action="https://www.freecodecamp.com/email-submit" id="form">
+    <input type="email" name="email" id="email" placeholder="Your e-mail">
+    <input type="submit" id="submit">
+</form>
+    </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
